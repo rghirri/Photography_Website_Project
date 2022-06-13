@@ -1,0 +1,44 @@
+// Footer Titles
+.footer_title {
+  font-size: 15px;
+  font-family: "Paragraph_font", sans-serif;
+  color: #9B9393;
+}
+
+// Footer Address
+.footer_address{
+  font-size: 12px;
+  font-family: "Paragraph_font", sans-serif;
+  color: #ffffff;
+}
+
+// Footer Phone
+.footer_contact{
+  font-size: 15px;
+  color: #ffffff;
+  &:hover{
+    color: #9B9393;
+  }
+}
+
+// Footer Social
+.footer-social {
+  font-size: 30px;
+  color: #ffffff;
+}
+.footer-social:hover {
+  color: #9B9393;
+}
+
+// Footer copyright
+#Footer-copy {
+  text-decoration: none;
+  font-size: 11px;
+  font-family: "Paragraph_font", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 30px;
+  word-spacing: 1px;
+}
+

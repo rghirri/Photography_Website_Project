@@ -1,0 +1,39 @@
+@import "global-styles/mixins";
+//  Home Slider
+#owl-demo .item {
+  margin: 3px;
+}
+#owl-demo .item img {
+  display: table;
+  width: 100%;
+}
+#owl-demo {
+  background-color: #f1e8e7;
+  padding-bottom: 20px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  color: #000000;
+  font-size: 30px;
+  border-radius: 30px;
+  background: transparent;
+}
+
+// Sections
+#our_services {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include atMedium {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+
+#our_speciality {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include atMedium {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}

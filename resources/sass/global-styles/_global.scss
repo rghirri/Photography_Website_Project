@@ -1,0 +1,113 @@
+@import "mixins";
+@import "variables";
+/* General styles begin */
+/* ----------------------------------------------- */
+/* BASIC SETUP begin */
+/* ----------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------------------- */
+/* FONTS */
+/* ----------------------------------------------- */
+
+/* nav */
+@font-face {
+  src: url ("fonts/Roboto/Roboto-Bold.ttf");
+  font-family: "nav_font";
+}
+
+/* h1 */
+@font-face {
+  src: url ("/vendors/fonts/Roboto_slab/static/RobotoSlab-Light.ttf");
+  font-family: "h1_font";
+  font-weight: 100;
+}
+
+/* h2 */
+@font-face {
+  src: url ("/vendors/fonts/Roboto/Roboto-Bold.ttf");
+  font-family: "h2_font";
+}
+
+/* h3 */
+@font-face {
+  src: url ("/vendors/fonts/Roboto_slab/static/RobotoSlab-Bold.ttf");
+  font-family: "h3_font";
+}
+
+/* p */
+@font-face {
+  src: url ("/vendors/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "Paragraph_font";
+}
+
+h1 {
+  font-stretch: condensed;
+  text-transform: uppercase;
+  color: #9b9393;
+  font-family: "h1_font", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  @include atMedium {
+    font-size: 45px;
+  }
+}
+
+h2 {
+  font-stretch: condensed;
+  text-transform: uppercase;
+  color: #9b9393;
+  font-family: "h2_font", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  @include atMedium {
+    font-size: 35px;
+  }
+}
+
+h3 {
+  font-stretch: condensed;
+  text-transform: uppercase;
+  color: #9b9393;
+  font-family: "h3_font", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  @include atMedium {
+    font-size: 25px;
+  }
+}
+
+p.lead {
+  font-family: "Paragraph_font", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  @include atMedium {
+    font-size: 1.1rem;
+  }
+}
+
+a {
+  font-size: 15px;
+  font-family: "nav_font", sans-serif;
+  font-stretch: condensed;
+  text-transform: uppercase;
+  color: #9b9393;
+  &:hover {
+    color: #000000;
+  }
+}
+
+li {
+  list-style: none;
+}
